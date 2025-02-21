@@ -1,0 +1,133 @@
+/* ===== GENERAL STYLES ===== */
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #2c3e50 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== VEHICLE CARD ===== */
+.vehicle-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.badge-status {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.badge-available {
+    background: #27ae60;
+}
+
+.badge-rented {
+    background: #e74c3c;
+}
+
+/* ===== RENTAL FORM ===== */
+.rental-form {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-control {
+    border: 2px solid #dfe6e9;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background: #3498db;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background: #e74c3c;
+    border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #2c3e50;
+    color: white;
+    margin-top: auto;
+    padding: 1.5rem 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .vehicle-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
